@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>La chouette agence, agence web design à Lyon</title>
+    <title>Web design, Lyon, La chouette agence</title>
 
     <meta name="description" content="Agence design la chouette agence" />
 
@@ -25,7 +25,6 @@
     <!-- Analytics -->
 
     <script
-      type="text/javascript"
       async=""
       src="https://www.google-analytics.com/analytics.js"
     ></script>
@@ -45,6 +44,7 @@
 
     <!-- Analytics END -->
   </head>
+
   <body>
     <!-- Principal conteneur -->
 
@@ -54,7 +54,11 @@
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"
+              <a
+                id="accueil"
+                class="navbar-brand"
+                href="index.html"
+                aria-label="lien page accueil"
                 ><img
                   src="img/la-chouette-agence.png"
                   alt="paris web design logo agence web"
@@ -70,11 +74,9 @@
                 aria-label="nav-toogle"
                 aria-expanded="false"
               >
-                <span class="sr-only" aria-label="Toogle-navigation"
-                  >Toggle navigation</span
-                ><span class="icon-bar" aria-label="icon-bar"></span
-                ><span class="icon-bar" aria-label="icon-bar"></span
-                ><span class="icon-bar" aria-label="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span
+                ><span class="icon-bar"></span><span class="icon-bar"></span
+                ><span class="icon-bar"></span>
               </button>
             </div>
             <div
@@ -82,10 +84,7 @@
               role="menubar"
               aria-label="navbar"
             >
-              <ul
-                class="site-navigation nav navbar-nav"
-                aria-label="navbar-racine"
-              >
+              <ul class="site-navigation nav navbar-nav">
                 <li>
                   <a href="#bloc-2-services" title="Nos Métiers" role="menuitem"
                     >Nos Métiers</a
@@ -175,8 +174,8 @@
                 ></span>
               </div>
               <!-- Remplacement h3 par h2 pour SEO et Accessibilite -->
-              <h3 class="mg-md text-center">Web design</h3>
-              <p class="text-center">
+              <h3 id="webdesign" class="mg-md text-center">Web design</h3>
+              <p class="text-center" aria-describedby="webdesign">
                 Que vous ayez un site web qui a besoin d'un rafraîchissement ou
                 que vous partiez de zéro, laissez-nous vous réaliser un design
                 dont vous serez fier.
@@ -195,11 +194,8 @@
                 ></span>
               </div>
 
-              <h3 class="mg-md text-center">Stratégie</h3>
-              <p
-                class="text-center"
-                aria-label="Présentation des services de l'agence"
-              >
+              <h3 id="stratégie" class="mg-md text-center">Stratégie</h3>
+              <p class="text-center" aria-describedby="stratégie">
                 Plutôt que de suggérer des designs à la mode, nous travaillerons
                 avec vous pour comprendre vos objectifs commerciaux afin de vous
                 proposer le meilleur design possible.<br />
@@ -218,8 +214,10 @@
                 ></span>
               </div>
 
-              <h3 class="mg-md text-center">Illustrations</h3>
-              <p class="text-center" aria-label="Présentation de notre équipe">
+              <h3 id="illustrations" class="mg-md text-center">
+                Illustrations
+              </h3>
+              <p class="text-center" aria-describedby="illustrations">
                 Un bon design n'est rien sans de bonnes illustrations. Laissez
                 faire notre équipe de graphistes talentueux pour donner à vos
                 pages une touche finale d'élégance.
@@ -227,14 +225,17 @@
             </div>
           </div>
           <div class="row voffset-lg voffset">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-              <div class="avis" aria-label="Avis d'un client">
+            <div
+              id="avis"
+              class="col-xs-12 col-md-8 col-md-offset-2 text-center"
+            >
+              <div class="avis" aria-describedby="avis">
                 "La chouette agence est une excellente agence web ! Les web
                 designers ont réussi à capturer l'essence de notre entreprise et
                 à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes
                 en ligne à Lyon"
               </div>
-              <div class="origine" aria-label="Nom de l'auteur de l'avis">
+              <div class="origine" aria-describedby="avis">
                 Maxime Guibard, PDG de À vos fourchettes
               </div>
             </div>
@@ -260,22 +261,23 @@
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace black-background">
             <div class="col-sm-12">
-              <h2 class="mg-md text-center tc-yellow">
+              <h2 id="localisation" class="mg-md text-center tc-yellow">
                 Nous souhaitons aider les entreprises de la région Lyonnaise à
                 se développer et à connaître le succès. Nous travaillons pour
                 aider les entreprises locales à attirer de nouveaux clients .<br />
               </h2>
-              <p class="text-center white" aria-label="valeurs de l'entreprise">
+              <p class="text-center white" aria-labelledby="localisation">
                 Nous aimons collaborer avec des entrepreneurs créatifs et des
                 entreprises locale, qu’elles aient besoin de créer un site de A
                 à Z ou de donner un coup de jeune à leur site. Que vous ayez
                 besoin d’une identité visuelle complète ou d’une refonte de
                 votre site, n’hésitez pas à nous contacter. Nous travaillerons
-                ensemble pour créer des sites beau et bien structurés, qui
+                ensemble pour créer des sites beaux et bien structurés, qui
                 seront facilement trouvable sur les moteurs de recherche.
                 <br /><br /><a
                   class="ltc-yellow bold-link"
                   href="page2.html#votre-nom"
+                  aria-label="lien de contact"
                   >Contactez notre équipe</a
                 ><br />
               </p>
@@ -313,10 +315,10 @@
                   class="img-responsive portfolio-thumb"
               /></a>
 
-              <h3 class="mg-md text-center">
+              <h3 id="refonte" class="mg-md text-center">
                 Refonte d'un site web pour un journal local
               </h3>
-              <p class="text-center">
+              <p class="text-center" aria-labelledby="refonte">
                 Nous avons créé une nouvelle identité visuelle pour un journal
                 lyonnais.
               </p>
@@ -334,10 +336,10 @@
                   alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"
               /></a>
 
-              <h3 class="mg-md text-center">
+              <h3 id="photo" class="mg-md text-center">
                 Création d'un site web pour photographes
               </h3>
-              <p class="text-center" aria-label="légende">
+              <p class="text-center" aria-labelledby="photo">
                 Nous avons conçu la plateforme idéale pour laisser place aux
                 clichés des photographes.
               </p>
@@ -357,10 +359,10 @@
                   alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"
               /></a>
 
-              <h3 class="mg-md text-center">
+              <h3 class="mg-md text-center" id="voyages">
                 Création d'un site internet pour un voyageur
               </h3>
-              <p class="text-center" aria-label="légende">
+              <p class="text-center" aria-labelledby="voyages">
                 Nous avons élaboré un site internet et des illustrations pour
                 sublimer les vidéos et les articles de ce voyageur.
               </p>
@@ -378,10 +380,10 @@
                   alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"
               /></a>
 
-              <h3 class="mg-md text-center">
+              <h3 class="mg-md text-center" id="mariage">
                 Conception d'un site pour une agence de mariage
               </h3>
-              <p class="text-center" aria-label="légende">
+              <p class="text-center" aria-labelledby="mariage">
                 Nous avons travaillé avec cette agence pour créer un site
                 internet permettant la présentation détaillée de leurs
                 prestations.
@@ -428,13 +430,12 @@
 
       <!-- Scroll button up -->
       <a
-        aria-label="Coordonnés et heures d'ouverture de l'agence"
+        onclick="scrollToTarget('1')"
+        aria-label="bouton retour haut de page"
         role="contentinfo"
         data-focusable="true"
         tabindex="0"
         class="bloc-button btn btn-d scrollToTop showScrollTop"
-        onclick="scrollToTarget('1')"
-        aria-label="bouton retour haut de page"
         ><span class="fa fa-chevron-up"></span
       ></a>
       <!-- ScrollToTop Button END-->
@@ -444,10 +445,7 @@
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <p
-                class="text-center white"
-                aria-label="Présentation de l'agence"
-              >
+              <p class="text-center white">
                 La chouette agence - Agence web basée à Lyon.<br />
               </p>
               <div class="row row-no-gutters social">
