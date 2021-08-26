@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
- <title>Contact|La chouette agence</title>
+    <title>Contact|La chouette agence</title>
     <meta name="description" content="Agence design, Lyon, Contact" />
     <meta name="robots" content="follow" />
     <meta
@@ -16,28 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
-   
-
     <!-- Analytics -->
-
-    <script
-      type="text/javascript"
-      async=""
-      src="https://www.google-analytics.com/analytics.js"
-    ></script>
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=UA-164645214-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-164645214-1");
-    </script>
 
     <!-- Analytics END -->
   </head>
@@ -64,20 +43,40 @@
                 aria-label="nav-toogle"
                 aria-expanded="false"
               >
-                <span class="sr-only" aria-label="Toogle-navigation">Toggle navigation</span>
-                <span class="icon-bar" aria-label="icon-bar"></span><span class="icon-bar" aria-label="icon-bar"></span
-                ><span class="icon-bar" aria-label="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span><span class="icon-bar"></span
+                ><span class="icon-bar"></span>
               </button>
             </div>
-            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav"role="menubar"
-              aria-label="navbar">
-              <ul class="site-navigation nav navbar-nav"aria-label="navbar-racine">
+            <div
+              class="collapse navbar-collapse navbar-1 special-dropdown-nav"
+              role="menubar"
+              aria-label="navbar"
+            >
+              <ul
+                class="site-navigation nav navbar-nav"
+                aria-label="navbar-racine"
+              >
                 <li>
-                  <a href="index.html" title="Accueil" role="menuitem">Accueil</a>
+                  <a href="index.html" title="Accueil" role="menuitem"
+                    >Accueil</a
+                  >
                 </li>
-                <li><a href="index.html#bloc-2-services" title="Nos Métiers" role="menuitem">Nos Métiers</a></li>
                 <li>
-                  <a href="index.html#bloc-4-portfolio" title="Nos Réalisations" role="menuitem">Nos Réalisations</a>
+                  <a
+                    href="index.html#bloc-2-services"
+                    title="Nos Métiers"
+                    role="menuitem"
+                    >Nos Métiers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#bloc-4-portfolio"
+                    title="Nos Réalisations"
+                    role="menuitem"
+                    >Nos Réalisations</a
+                  >
                 </li>
               </ul>
             </div>
@@ -101,10 +100,13 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center hero-bloc-text tc-white">
+              <h1
+                class="text-center hero-bloc-text tc-white"
+                aria-label="Titre principal"
+              >
                 Parlons web design !
               </h1>
-              <p class="text-center mg-lg tc-white tight-width-whitespace" aria-label="Texte d'invitation">
+              <p class="text-center mg-lg tc-white tight-width-whitespace">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
                 Parlez-nous de votre projet en complétant le formulaire
@@ -121,12 +123,7 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
+              <form id="form_1">
                 <div class="form-group">
                   <label for="votre-nom"> Nom </label>
                   <input
@@ -149,24 +146,26 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for='Comment-nous-avez-vous-connu'> Comment nous avez-vous connu ? </label>
+                  <label for="Comment-nous-avez-vous-connu">
+                    Comment nous avez-vous connu ?
+                  </label>
                   <input
                     class="form-control"
                     type="email"
-                    name='Details'
+                    name="Details"
                     id="Comment-nous-avez-vous-connu"
                     placeholder="Racontez-nous"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="Parlez-nous de votre projet"> Parlez-nous de votre projet <br /> </label
+                  <label for="Parlez-nous-de-votre-projet">
+                    Parlez-nous de votre projet <br /> </label
                   ><textarea
-                    id="Parlez-nous de votre projet"
+                    id="Parlez-nous-de-votre-projet"
                     class="form-control"
                     rows="4"
                     cols="50"
-                    required
                     placeholder="Entrez votre message"
                     required
                   ></textarea>
@@ -184,8 +183,17 @@
                 </button>
               </form>
             </div>
-            <div class="col-sm-6" aria-label="Coordonnés et heures d'ouverture de l'agence" role="contentinfo">
-              <p aria-label="Coordonnés et heures d'ouverture de l'agence" role="contentinfo" data-focusable="true" tabindex="0">
+            <div
+              class="col-sm-6"
+              aria-label="Coordonnés et heures d'ouverture de l'agence"
+              role="contentinfo"
+            >
+              <p
+                aria-label="Coordonnés et heures d'ouverture de l'agence"
+                role="contentinfo"
+                data-focusable="true"
+                tabindex="0"
+              >
                 contact@lachouetteagence.com<br /><strong>
                   2 place Sathonay 69001 Lyon</strong
                 ><br />Ouvert de 9h à 18h, du lundi au vendredi<br />
@@ -195,8 +203,6 @@
         </div>
       </div>
       <!-- bloc-7 END -->
-
-      
 
       <!-- Footer - bloc-8 -->
       <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -209,28 +215,40 @@
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://twitter.com/"title="Twitter"
+                    <a
+                      class="social"
+                      href="https://twitter.com/"
+                      title="Twitter"
                       ><span class="fa fa-twitter icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.facebook.com/"title="Facebook"
+                    <a
+                      class="social"
+                      href="https://www.facebook.com/"
+                      title="Facebook"
                       ><span class="fa fa-facebook icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://dribbble.com/"title="Dribble"
+                    <a
+                      class="social"
+                      href="https://dribbble.com/"
+                      title="Dribble"
                       ><span class="fa fa-dribbble icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.instagram.com/"title="Instagram"
+                    <a
+                      class="social"
+                      href="https://www.instagram.com/"
+                      title="Instagram"
                       ><span class="fa fa-instagram icon-md"></span
                     ></a>
                   </div>
@@ -240,28 +258,44 @@
           </div>
         </div>
         <div class="row">
-                <div class="partenaire">
-						<p><strong>Partenaires</strong></p>
-						<div class="partenaire-l">
-							<ul>
-								<li><a href="https://www.canon.fr/" title="Canon, Matériel Photo">Canon</a></li>
-							</ul>
-							<ul>
-								<li><a href="https://www.nikon.fr/fr_FR//" title="Nikon, Matériel Photo">Nikon</a></li>
-							</ul>
-						</div>
+          <div class="partenaire">
+            <p><strong>Partenaires</strong></p>
+            <div class="partenaire-l">
+              <ul>
+                <li>
+                  <a href="https://www.canon.fr/" title="Canon, Matériel Photo"
+                    >Canon</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.nikon.fr/fr_FR//"
+                    title="Nikon, Matériel Photo"
+                    >Nikon</a
+                  >
+                </li>
+              </ul>
+            </div>
             <div class="secteur">
-						<p><strong>Secteurs d'activité :</strong> Presse | Mariage | Photographie | voyage |
-							<a href="index.html#bloc-4-portfolio" title="Les réalisations" class="secteur__lien">Tous les
-								secteurs</a>
-						</p>
-					</div>
-					</div>
+              <p>
+                <strong>Secteurs d'activité :</strong> Presse | Mariage |
+                Photographie | voyage |
+                <a
+                  href="index.html#bloc-4-portfolio"
+                  title="Les réalisations"
+                  class="secteur__lien"
+                  >Tous les secteurs</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Footer - bloc-8 END -->
       </div>
-      <!-- Footer - bloc-8 END -->
+      <!-- Principal conteneur END -->
     </div>
-    <!-- Principal conteneur END -->
-
     <!-- Javascript -->
     <script src="./js/jquery-2.1.0.js"></script>
     <script src="./js/bootstrap.js"></script>
