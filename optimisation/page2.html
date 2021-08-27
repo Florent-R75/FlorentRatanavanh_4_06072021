@@ -40,7 +40,7 @@
                 class="ui-navbar-toggle navbar-toggle"
                 data-toggle="collapse"
                 data-target=".navbar-1"
-                aria-label="nav-toogle"
+                aria-controls="nav-toggle"
                 aria-expanded="false"
               >
                 <span class="sr-only">Toggle navigation</span>
@@ -50,31 +50,20 @@
             </div>
             <div
               class="collapse navbar-collapse navbar-1 special-dropdown-nav"
-              role="menubar"
+              role="navigation"
               aria-label="navbar"
             >
-              <ul
-                class="site-navigation nav navbar-nav"
-                aria-label="navbar-racine"
-              >
+              <ul class="site-navigation nav navbar-nav">
                 <li>
-                  <a href="index.html" title="Accueil" role="menuitem"
-                    >Accueil</a
-                  >
+                  <a href="index.html" role="menuitem">Accueil</a>
                 </li>
                 <li>
-                  <a
-                    href="index.html#bloc-2-services"
-                    title="Nos Métiers"
-                    role="menuitem"
+                  <a href="index.html#bloc-2-services" role="menuitem"
                     >Nos Métiers</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="index.html#bloc-4-portfolio"
-                    title="Nos Réalisations"
-                    role="menuitem"
+                  <a href="index.html#bloc-4-portfolio" role="menuitem"
                     >Nos Réalisations</a
                   >
                 </li>
@@ -102,7 +91,8 @@
             <div class="col-sm-12">
               <h1
                 class="text-center hero-bloc-text tc-white"
-                aria-label="Titre principal"
+                aria-label="Titre-principal"
+                id="Titre principal"
               >
                 Parlons web design !
               </h1>
@@ -151,7 +141,7 @@
                   </label>
                   <input
                     class="form-control"
-                    type="email"
+                    type="text"
                     name="Details"
                     id="Comment-nous-avez-vous-connu"
                     placeholder="Racontez-nous"
@@ -183,21 +173,12 @@
                 </button>
               </form>
             </div>
-            <div
-              class="col-sm-6"
-              aria-label="Coordonnés et heures d'ouverture de l'agence"
-              role="contentinfo"
-            >
-              <p
-                aria-label="Coordonnés et heures d'ouverture de l'agence"
-                role="contentinfo"
-                data-focusable="true"
-                tabindex="0"
-              >
+            <div class="col-sm-6">
+              <address data-focusable="true" tabindex="0">
                 contact@lachouetteagence.com<br /><strong>
                   2 place Sathonay 69001 Lyon</strong
                 ><br />Ouvert de 9h à 18h, du lundi au vendredi<br />
-              </p>
+              </address>
             </div>
           </div>
         </div>
@@ -209,9 +190,9 @@
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <p class="text-center white">
+              <h2 class="text-center white">
                 La chouette agence - Agence web basée à Lyon.<br />
-              </p>
+              </h2>
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
@@ -259,7 +240,7 @@
         </div>
         <div class="row">
           <div class="partenaire">
-            <p><strong>Partenaires</strong></p>
+            <h2>Partenaires</h2>
             <div class="partenaire-l">
               <ul>
                 <li>
