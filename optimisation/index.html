@@ -55,20 +55,23 @@
                 class="ui-navbar-toggle navbar-toggle"
                 data-toggle="collapse"
                 data-target=".navbar-1"
-                aria-label="bouton de navigation mobile à déplier"
+                aria-label="menu"
                 aria-expanded="false"
+                aria-controls="menu2"
+                aria-haspopup="menu"
               >
                 <span class="sr-only">Toggle navigation</span
                 ><span class="icon-bar"></span><span class="icon-bar"></span
                 ><span class="icon-bar"></span>
               </button>
             </div>
-            <div
-              class="collapse navbar-collapse navbar-1 special-dropdown-nav"
-              role="menubar"
-              aria-label="barre de navigation à 3 options"
-            >
-              <ul class="site-navigation nav navbar-nav">
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul
+                class="site-navigation nav navbar-nav"
+                id="menu2"
+                role="menubar"
+                aria-labelledby="menu2"
+              >
                 <li>
                   <a href="#bloc-2-services" role="menuitem">Nos Métiers</a>
                 </li>
@@ -78,7 +81,7 @@
                   >
                 </li>
                 <li>
-                  <a href="page2.html" role="menuitem">Contact</a>
+                  <a href=contact.html" role="menuitem">Contact</a>
                 </li>
               </ul>
             </div>
@@ -247,7 +250,7 @@
                 seront facilement trouvable sur les moteurs de recherche.
                 <br /><br /><a
                   class="ltc-yellow bold-link"
-                  href="page2.html#votre-nom"
+                  href="contact.html#votre-nom"
                   >Contactez notre équipe</a
                 ><br />
               </p>
@@ -388,7 +391,7 @@
             </h2>
             <div class="col-sm-12 text-center">
               <a
-                href="page2.html"
+                href="contact.html"
                 class="
                   btn btn-atomic-tangerine btn-clean btn-rd btn-lg
                   cta-hero
